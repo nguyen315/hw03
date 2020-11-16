@@ -148,11 +148,11 @@ block content
             .col-sm-6.col-md-3.p0
               .box-two.proerty-item
                 .item-thumb
-                  a(href='/products/detail')
+                  a(href='/products/'+product.id)
                     img(src= product.cover)
                 .item-entry.overflow
                   h5
-                    a(href='/products/detail') #{ product.title }
+                    a(href='/products/'+product.id) #{ product.title }
                   .dot-hr
                   span.pull-left
                     b Price :
