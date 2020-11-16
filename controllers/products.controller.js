@@ -13,14 +13,18 @@ exports.detail= function(req, res, next) {
     const productId = req.params.productId;
 
     // get books from models
+    const products = productsModel.list();
+
+    // get books from models
     const product = productsModel.productById(productId);
     
 
 
-    // if (product) {
+    if (product) {
     res.render('products/detail', { product });
-    // }
-    // else 
-    //     // can them trang 404 de cho nay render 404 page
-    //     res.render('index', {products});
+    }
+    else {
+        // can them trang 404 de cho nay render 404 page
+        res.render('index', {products});
+    }
 }

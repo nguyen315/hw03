@@ -41,4 +41,5 @@ exports.productById = (id) => {
     for (let i = 0; i < products.length; i++) {
         if (products[i].id == id) return products[i]
     }
+    return null;
 }
