@@ -1,0 +1,567 @@
+doctype html
+//if lt IE 7
+//if IE 7
+//if IE 8
+// [if gt IE 8] <!
+// <![endif]
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  title GARO ESTATE | Products Detail
+  meta(name='description', content='GARO is a real-estate template')
+  meta(name='author', content='Kimarotec')
+  meta(name='keyword', content='html5, css, bootstrap, property, real-estate theme , bootstrap template')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800', rel='stylesheet', type='text/css')
+  // Place favicon.ico and apple-touch-icon.png in the root directory
+  link(rel='shortcut icon', href='favicon.ico', type='image/x-icon')
+  link(rel='icon', href='favicon.ico', type='image/x-icon')
+  link(rel='stylesheet', href='/assets/css/normalize.css')
+  link(rel='stylesheet', href='/assets/css/font-awesome.min.css')
+  link(rel='stylesheet', href='/assets/css/fontello.css')
+  link(href='/assets/fonts/icon-7-stroke/css/pe-icon-7-stroke.css', rel='stylesheet')
+  link(href='/assets/fonts/icon-7-stroke/css/helper.css', rel='stylesheet')
+  link(href='/assets/css/animate.css', rel='stylesheet', media='screen')
+  link(rel='stylesheet', href='/assets/css/bootstrap-select.min.css')
+  link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+  link(rel='stylesheet', href='/assets/css/icheck.min_all.css')
+  link(rel='stylesheet', href='/assets/css/price-range.css')
+  link(rel='stylesheet', href='/assets/css/owl.carousel.css')
+  link(rel='stylesheet', href='/assets/css/owl.theme.css')
+  link(rel='stylesheet', href='/assets/css/owl.transitions.css')
+  link(rel='stylesheet', href='/assets/css/style.css')
+  link(rel='stylesheet', href='/assets/css/responsive.css')
+#preloader
+  #status &nbsp;
+// Body content
+.header-connect
+  .container
+    .row
+      .col-md-5.col-sm-8.col-xs-12
+        .header-half.header-call
+          p
+            span
+              i.pe-7s-call
+              |  +1 234 567 7890
+            span
+              i.pe-7s-mail
+              |  your@company.com
+      .col-md-2.col-md-offset-5.col-sm-3.col-sm-offset-1.col-xs-12
+        .header-half.header-social
+          ul.list-inline
+            li
+              a(href='#')
+                i.fa.fa-facebook
+            li
+              a(href='#')
+                i.fa.fa-twitter
+            li
+              a(href='#')
+                i.fa.fa-vine
+            li
+              a(href='#')
+                i.fa.fa-linkedin
+            li
+              a(href='#')
+                i.fa.fa-dribbble
+            li
+              a(href='#')
+                i.fa.fa-instagram
+// End top header
+nav.navbar.navbar-default
+  .container
+    // Brand and toggle get grouped for better mobile display
+    .navbar-header
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navigation')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='index.html')
+        img(src='/assets/img/logo.png', alt='')
+    // Collect the nav links, forms, and other content for toggling
+    #navigation.collapse.navbar-collapse.yamm
+      .button.navbar-right
+        button.navbar-btn.nav-button.wow.bounceInRight.login(onclick=" window.open('register.html')", data-wow-delay='0.4s') Login
+        button.navbar-btn.nav-button.wow.fadeInRight(onclick=" window.open('submit-property.html')", data-wow-delay='0.5s') Submit
+      ul.main-nav.nav.navbar-nav.navbar-right
+        li.dropdown.ymm-sw(data-wow-delay='0.1s')
+          a.dropdown-toggle.active(href='index.html', data-toggle='dropdown', data-hover='dropdown', data-delay='200')
+            | Home 
+            b.caret
+          ul.dropdown-menu.navbar-nav
+            li
+              a(href='index-2.html') Home Style 2
+            li
+              a(href='index-3.html') Home Style 3
+            li
+              a(href='index-4.html') Home Style 4
+            li
+              a(href='index-5.html') Home Style 5
+        li.wow.fadeInDown(data-wow-delay='0.1s')
+          a(href='/') Products
+        li.wow.fadeInDown(data-wow-delay='0.1s')
+          a(href='property.html') Property
+        li.dropdown.yamm-fw(data-wow-delay='0.1s')
+          a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='200')
+            | Template 
+            b.caret
+          ul.dropdown-menu
+            li
+              .yamm-content
+                .row
+                  .col-sm-3
+                    h5 Home pages
+                    ul
+                      li
+                        a(href='index.html') Home Style 1
+                      li
+                        a(href='index-2.html') Home Style 2
+                      li
+                        a(href='index-3.html') Home Style 3
+                      li
+                        a(href='index-4.html') Home Style 4
+                      li
+                        a(href='index-5.html') Home Style 5
+                  .col-sm-3
+                    h5 Pages and blog
+                    ul
+                      li
+                        a(href='blog.html') Blog listing
+                      li
+                        a(href='single.html') Blog Post (full)
+                      li
+                        a(href='single-right.html') Blog Post (Right)
+                      li
+                        a(href='single-left.html') Blog Post (left)
+                      li
+                        a(href='contact.html') Contact style (1)
+                      li
+                        a(href='contact-3.html') Contact style (2)
+                      li
+                        a(href='contact_3.html') Contact style (3)
+                      li
+                        a(href='faq.html') FAQ page
+                      li
+                        a(href='404.html') 404 page
+                  .col-sm-3
+                    h5 Property
+                    ul
+                      li
+                        a(href='property-1.html') Property pages style (1)
+                      li
+                        a(href='property-2.html') Property pages style (2)
+                      li
+                        a(href='property-3.html') Property pages style (3)
+                    h5 Properties list
+                    ul
+                      li
+                        a(href='properties.html') Properties list style (1)
+                      li
+                        a(href='properties-2.html') Properties list style (2)
+                      li
+                        a(href='properties-3.html') Properties list style (3)
+                  .col-sm-3
+                    h5 Property process
+                    ul
+                      li
+                        a(href='submit-property.html') Submit - step 1
+                      li
+                        a(href='submit-property.html') Submit - step 2
+                      li
+                        a(href='submit-property.html') Submit - step 3
+                    h5 User account
+                    ul
+                      li
+                        a(href='register.html') Register / login
+                      li
+                        a(href='user-properties.html') Your properties
+                      li
+                        a(href='submit-property.html') Submit property
+                      li
+                        a(href='change-password.html') Change password
+                      li
+                        a(href='user-profile.html') Your profile
+              // /.yamm-content
+        li.wow.fadeInDown(data-wow-delay='0.4s')
+          a(href='contact.html') Contact
+    // /.navbar-collapse
+  // /.container-fluid
+// End of nav bar
+.page-head
+  .container
+    .row
+      .page-head-content
+        h1.page-title FAQ PAge
+// End page header
+.content-area.blog-page.padding-top-40(style='background-color: #FCFCFC; padding-bottom: 55px;')
+  .container
+    .row
+      .blog-asside-right.col-md-3
+        .panel.panel-default.sidebar-menu.wow.fadeInRight.animated
+          .panel-heading
+            h3.panel-title Text widget
+          .panel-body.text-widget
+            p
+              | Improved own provided blessing may peculiar domestic. Sight house has sex never. No visited raising gravity outward subject my cottage mr be. Hold do at tore in park feet near my case.
+        .panel.panel-default.sidebar-menu.wow.fadeInRight.animated
+          .panel-heading
+            h3.panel-title Search
+          .panel-body
+            form(role='search')
+              .input-group
+                input.form-control(placeholder='Search', type='text')
+                span.input-group-btn
+                  button.btn.btn-smal(type='submit')
+                    i.fa.fa-search
+        .panel.panel-default.sidebar-menu.wow.fadeInRight.animated
+          .panel-heading
+            h3.panel-title Recommended
+          .panel-body.recent-property-widget
+            ul
+              li
+                .col-md-3.col-sm-3.col-xs-3.blg-thumb.p0
+                  a(href='single.html')
+                    img(src='/assets/img/demo/small-property-2.jpg')
+                  span.property-seeker
+                    b.b-1 A
+                    b.b-2 S
+                .col-md-8.col-sm-8.col-xs-8.blg-entry
+                  h6
+                    a(href='single.html') Super nice villa 
+                  span.property-price 3000000$
+              li
+                .col-md-3.col-sm-3.col-xs-3.blg-thumb.p0
+                  a(href='single.html')
+                    img(src='/assets/img/demo/small-property-1.jpg')
+                  span.property-seeker
+                    b.b-1 A
+                    b.b-2 S
+                .col-md-8.col-sm-8.col-xs-8.blg-entry
+                  h6
+                    a(href='single.html') Super nice villa 
+                  span.property-price 3000000$
+              li
+                .col-md-3.col-sm-3.col-xs-3.blg-thumb.p0
+                  a(href='single.html')
+                    img(src='/assets/img/demo/small-property-3.jpg')
+                  span.property-seeker
+                    b.b-1 A
+                    b.b-2 S
+                .col-md-8.col-sm-8.col-xs-8.blg-entry
+                  h6
+                    a(href='single.html') Super nice villa 
+                  span.property-price 3000000$
+              li
+                .col-md-3.col-sm-3.col-xs-3.blg-thumb.p0
+                  a(href='single.html')
+                    img(src='/assets/img/demo/small-property-2.jpg')
+                  span.property-seeker
+                    b.b-1 A
+                    b.b-2 S
+                .col-md-8.col-sm-8.col-xs-8.blg-entry
+                  h6
+                    a(href='single.html') Super nice villa 
+                  span.property-price 3000000$
+        .panel.sidebar-menu.wow.fadeInRight.animated
+          .panel-heading
+            h3.panel-title Tags
+          .panel-body
+            ul.tag-cloud
+              li
+                a(href='#')
+                  i.fa.fa-tags
+                  |  html5
+              li
+                a(href='#')
+                  i.fa.fa-tags
+                  |  css3
+              li
+                a(href='#')
+                  i.fa.fa-tags
+                  |  jquery
+              li
+                a(href='#')
+                  i.fa.fa-tags
+                  |  ajax
+              li
+                a(href='#')
+                  i.fa.fa-tags
+                  |  php
+              li
+                a(href='#')
+                  i.fa.fa-tags
+                  |  responsive
+              li
+                a(href='#')
+                  i.fa.fa-tags
+                  |  visio
+              li
+                a(href='#')
+                  i.fa.fa-tags
+                  |  bootstrap
+      .blog-lst.col-md-9.p0
+        section#id-100.post.single
+          .post-header.single
+            div
+              h2.wow.fadeInLeft.animated FASHIN NOW 2016
+              .title-line.wow.fadeInRight.animated
+            .row.wow.fadeInRight.animated
+              .col-sm-6
+                p.author-category
+                  | By 
+                  a(href='#') John Snow
+                  |                                             in 
+                  a(href='blog.html') Webdesign
+              .col-sm-6.right
+                p.date-comments
+                  a(href='single.html')
+                    i.fa.fa-calendar-o
+                    |  June 20, 2013
+                  a(href='single.html')
+                    i.fa.fa-comment-o
+                    |  8 Comments
+            .image.wow.fadeInRight.animated
+              img.img-responsive(src='/assets/img/blog2.jpg', alt='Example blog post alt')
+          #post-content.post-body.single.wow.fadeInLeft.animated
+            p
+              strong Pellentesque habitant morbi tristique
+              |                                     senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+              |                                     semper. 
+              em Aenean ultricies mi vitae est.
+              |                                     Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, 
+              code commodo vitae
+              | , ornare sit amet, wisi. Aenean
+              |                                     fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. 
+              a(href='#') Donec non enim
+              |  in turpis pulvinar facilisis. Ut felis.
+            p
+              img.img-responsive(src='/assets/img/blog10.jpg', alt='Example blog post alt')
+            h2 Header Level 2
+            ol
+              li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              li Aliquam tincidunt mauris eu risus.
+            blockquote
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada
+                | tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
+            h3 Header Level 3
+            p
+              | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+              | ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
+              ul
+                li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                li Aliquam tincidunt mauris eu risus.
+            p
+              img.img-responsive(src='/assets/img/blog.jpg', alt='Example blog post alt')
+            p
+              | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+              | condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros
+              | eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+          .post-footer.single.wow.fadeInBottum.animated
+            ul.pager
+              li.previous
+                a(href='#')
+                  i
+                  | &larr; Older
+              li.next.disabled
+                a(href='#')
+                  | Newer &rarr;
+                  i
+        section.about-autor
+        section#comments.comments.wow.fadeInRight.animated
+          h4.text-uppercase.wow.fadeInLeft.animated 3 comments
+          .row.comment
+            .col-sm-3.col-md-2.text-center-xs
+              p
+                img.img-responsive.img-circle(src='/assets/img/client-face1.png', alt='')
+            .col-sm-9.col-md-10
+              h5.text-uppercase Julie Alma
+              p.posted
+                i.fa.fa-clock-o
+                |  September 23, 2011 at 12:00 am
+              p
+                | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+                | Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+              p.reply
+                a(href='#')
+                  i.fa.fa-reply
+                  |  Reply
+          // /.comment
+          .row.comment.last
+            .col-sm-3.col-md-2.text-center-xs
+              p
+                img.img-responsive.img-circle(src='/assets/img/client-face2.png', alt='')
+            .col-sm-9.col-md-10
+              h5.text-uppercase Louise Armero
+              p.posted
+                i.fa.fa-clock-o
+                |  September 23, 2012 at 12:00 am
+              p
+                | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+                | Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+              p.reply
+                a(href='#')
+                  i.fa.fa-reply
+                  |  Reply
+          // /.comment
+        section#comment-form.add-comments
+          h4.text-uppercase.wow.fadeInLeft.animated Leave comment
+          form
+            .row.wow.fadeInLeft.animated
+              .col-sm-6
+                .form-group
+                  label(for='name')
+                    | Name 
+                    span.required *
+                  input#name.form-control(type='text')
+            .row.wow.fadeInLeft.animated
+              .col-sm-6
+                .form-group
+                  label(for='email')
+                    | Email 
+                    span.required *
+                  input#email.form-control(type='text')
+            .row.wow.fadeInLeft.animated
+              .col-sm-12
+                .form-group
+                  label(for='comment')
+                    | Comment 
+                    span.required *
+                  textarea#comment.form-control(rows='4')
+            .row.wow.fadeInLeft.animated
+              .col-sm-12.text-right
+                button.btn.btn-primary
+                  i.fa.fa-comment-o
+                  |  Post comment
+// Footer area
+.footer-area
+  .footer
+    .container
+      .row
+        .col-md-3.col-sm-6.wow.fadeInRight.animated
+          .single-footer
+            h4 About us 
+            .footer-title-line
+            img.wow.pulse(src='/assets/img/footer-logo.png', alt='', data-wow-delay='1s')
+            p
+              | Lorem ipsum dolor cum necessitatibus su quisquam molestias. Vel unde, blanditiis.
+            ul.footer-adress
+              li
+                i.pe-7s-map-marker.strong  
+                |  9089 your adress her
+              li
+                i.pe-7s-mail.strong  
+                |  email@yourcompany.com
+              li
+                i.pe-7s-call.strong  
+                |  +1 908 967 5906
+        .col-md-3.col-sm-6.wow.fadeInRight.animated
+          .single-footer
+            h4 Quick links 
+            .footer-title-line
+            ul.footer-menu
+              li
+                a(href='/') Products
+              li
+                a(href='#') Services
+              li
+                a(href='submit-property.html') Submit property 
+              li
+                a(href='contact.html') Contact us
+              li
+                a(href='faq.html') fqa
+              li
+                a(href='faq.html') Terms 
+        .col-md-3.col-sm-6.wow.fadeInRight.animated
+          .single-footer
+            h4 Last News
+            .footer-title-line
+            ul.footer-blog
+              li
+                .col-md-3.col-sm-4.col-xs-4.blg-thumb.p0
+                  a(href='single.html')
+                    img(src='/assets/img/demo/small-proerty-2.jpg')
+                  span.blg-date 12-12-2016
+                .col-md-8.col-sm-8.col-xs-8.blg-entry
+                  h6
+                    a(href='single.html') Add news functions 
+                  p(style='line-height: 17px; padding: 8px 2px;') Lorem ipsum dolor sit amet, nulla ...
+              li
+                .col-md-3.col-sm-4.col-xs-4.blg-thumb.p0
+                  a(href='single.html')
+                    img(src='/assets/img/demo/small-proerty-2.jpg')
+                  span.blg-date 12-12-2016
+                .col-md-8.col-sm-8.col-xs-8.blg-entry
+                  h6
+                    a(href='single.html') Add news functions 
+                  p(style='line-height: 17px; padding: 8px 2px;') Lorem ipsum dolor sit amet, nulla ...
+              li
+                .col-md-3.col-sm-4.col-xs-4.blg-thumb.p0
+                  a(href='single.html')
+                    img(src='/assets/img/demo/small-proerty-2.jpg')
+                  span.blg-date 12-12-2016
+                .col-md-8.col-sm-8.col-xs-8.blg-entry
+                  h6
+                    a(href='single.html') Add news functions 
+                  p(style='line-height: 17px; padding: 8px 2px;') Lorem ipsum dolor sit amet, nulla ...
+        .col-md-3.col-sm-6.wow.fadeInRight.animated
+          .single-footer.news-letter
+            h4 Stay in touch
+            .footer-title-line
+            p
+              | Lorem ipsum dolor sit amet, nulla  suscipit similique quisquam molestias. Vel unde, blanditiis.
+            form
+              .input-group
+                input.form-control(type='text', placeholder='E-mail ... ')
+                span.input-group-btn
+                  button.btn.btn-primary.subscribe(type='button')
+                    i.pe-7s-paper-plane.pe-2x
+              // /input-group
+            .social.pull-right
+              ul
+                li
+                  a.wow.fadeInUp.animated(href='https://twitter.com/kimarotec')
+                    i.fa.fa-twitter
+                li
+                  a.wow.fadeInUp.animated(href='https://www.facebook.com/kimarotec', data-wow-delay='0.2s')
+                    i.fa.fa-facebook
+                li
+                  a.wow.fadeInUp.animated(href='https://plus.google.com/kimarotec', data-wow-delay='0.3s')
+                    i.fa.fa-google-plus
+                li
+                  a.wow.fadeInUp.animated(href='https://instagram.com/kimarotec', data-wow-delay='0.4s')
+                    i.fa.fa-instagram
+                li
+                  a.wow.fadeInUp.animated(href='https://instagram.com/kimarotec', data-wow-delay='0.6s')
+                    i.fa.fa-dribbble
+  .footer-copy.text-center
+    .container
+      .row
+        .pull-left
+          span
+            | (C) 
+            a(href='http://www.KimaroTec.com') KimaroTheme
+            |  , All rights reserved 2016
+        .bottom-menu.pull-right
+          ul
+            li
+              a.wow.fadeInUp.animated(href='#', data-wow-delay='0.2s') Home
+            li
+              a.wow.fadeInUp.animated(href='#', data-wow-delay='0.3s') Property
+            li
+              a.wow.fadeInUp.animated(href='#', data-wow-delay='0.4s') Faq
+            li
+              a.wow.fadeInUp.animated(href='#', data-wow-delay='0.6s') Contact
+script(src='/assets/js/modernizr-2.6.2.min.js')
+script(src='/assets/js/jquery-1.10.2.min.js')
+script(src='/bootstrap/js/bootstrap.min.js')
+script(src='/assets/js/bootstrap-select.min.js')
+script(src='/assets/js/bootstrap-hover-dropdown.js')
+script(src='/assets/js/easypiechart.min.js')
+script(src='/assets/js/jquery.easypiechart.min.js')
+script(src='/assets/js/owl.carousel.min.js')
+script(src='/assets/js/wow.js')
+script(src='/assets/js/icheck.min.js')
+script(src='/assets/js/price-range.js')
+script(src='/assets/js/main.js')

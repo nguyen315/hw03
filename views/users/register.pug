@@ -1,0 +1,314 @@
+extends ../layouts/head
+block content
+  title Shopping web | Register Page
+  .header-connect
+    .container
+      .row
+        .col-md-5.col-sm-8.col-xs-12
+          .header-half.header-call
+            p
+              span
+                i.pe-7s-call
+                |  +1 234 567 7890
+              span
+                i.pe-7s-mail
+                |  your@company.com
+        .col-md-2.col-md-offset-5.col-sm-3.col-sm-offset-1.col-xs-12
+          .header-half.header-social
+            ul.list-inline
+              li
+                a(href='#')
+                  i.fa.fa-facebook
+              li
+                a(href='#')
+                  i.fa.fa-twitter
+              li
+                a(href='#')
+                  i.fa.fa-vine
+              li
+                a(href='#')
+                  i.fa.fa-linkedin
+              li
+                a(href='#')
+                  i.fa.fa-dribbble
+              li
+                a(href='#')
+                  i.fa.fa-instagram
+  // End top header
+  nav.navbar.navbar-default
+    .container
+      // Brand and toggle get grouped for better mobile display
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navigation')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='/')
+          img(src='/assets/img/logo.png', alt='')
+      // Collect the nav links, forms, and other content for toggling
+      #navigation.collapse.navbar-collapse.yamm
+        
+          
+        ul.main-nav.nav.navbar-nav.navbar-right
+          li.dropdown.ymm-sw(data-wow-delay='0.1s')
+            a.dropdown-toggle.active(href='index.html', data-toggle='dropdown', data-hover='dropdown', data-delay='200')
+              | Home 
+              b.caret
+            ul.dropdown-menu.navbar-nav
+              li
+                a(href='index-2.html') Home Style 2
+              li
+                a(href='index-3.html') Home Style 3
+              li
+                a(href='index-4.html') Home Style 4
+              li
+                a(href='index-5.html') Home Style 5
+          li.wow.fadeInDown(data-wow-delay='0.1s')
+            a(href='properties.html') Properties
+          li.wow.fadeInDown(data-wow-delay='0.1s')
+            a(href='property.html') Property
+          li.dropdown.yamm-fw(data-wow-delay='0.1s')
+            a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='200')
+              | Template 
+              b.caret
+            ul.dropdown-menu
+              li
+                .yamm-content
+                  .row
+                    .col-sm-3
+                      h5 Home pages
+                      ul
+                        li
+                          a(href='index.html') Home Style 1
+                        li
+                          a(href='index-2.html') Home Style 2
+                        li
+                          a(href='index-3.html') Home Style 3
+                        li
+                          a(href='index-4.html') Home Style 4
+                        li
+                          a(href='index-5.html') Home Style 5
+                    .col-sm-3
+                      h5 Pages and blog
+                      ul
+                        li
+                          a(href='blog.html') Blog listing
+                        li
+                          a(href='single.html') Blog Post (full)
+                        li
+                          a(href='single-right.html') Blog Post (Right)
+                        li
+                          a(href='single-left.html') Blog Post (left)
+                        li
+                          a(href='contact.html') Contact style (1)
+                        li
+                          a(href='contact-3.html') Contact style (2)
+                        li
+                          a(href='contact_3.html') Contact style (3)
+                        li
+                          a(href='faq.html') FAQ page
+                        li
+                          a(href='404.html') 404 page
+                    .col-sm-3
+                      h5 Property
+                      ul
+                        li
+                          a(href='property-1.html') Property pages style (1)
+                        li
+                          a(href='property-2.html') Property pages style (2)
+                        li
+                          a(href='property-3.html') Property pages style (3)
+                      h5 Properties list
+                      ul
+                        li
+                          a(href='properties.html') Properties list style (1)
+                        li
+                          a(href='properties-2.html') Properties list style (2)
+                        li
+                          a(href='properties-3.html') Properties list style (3)
+                    .col-sm-3
+                      h5 Property process
+                      ul
+                        li
+                          a(href='submit-property.html') Submit - step 1
+                        li
+                          a(href='submit-property.html') Submit - step 2
+                        li
+                          a(href='submit-property.html') Submit - step 3
+                      h5 User account
+                      ul
+                        li
+                          a(href='register.html') Register / login
+                        li
+                          a(href='user-properties.html') Your properties
+                        li
+                          a(href='submit-property.html') Submit property
+                        li
+                          a(href='change-password.html') Change password
+                        li
+                          a(href='user-profile.html') Your profile
+                // /.yamm-content
+          li.wow.fadeInDown(data-wow-delay='0.4s')
+            a(href='contact.html') Contact
+      // /.navbar-collapse
+    // /.container-fluid
+  // End of nav bar
+  .page-head
+    .container
+      .row
+        .page-head-content
+          h1.page-title New account / Sign in 
+  // End page header
+  // register-area
+  .register-area(style='background-color: rgb(249, 249, 249);')
+    .container
+      .col-md-10
+        .box-for.overflow
+          .col-md-12.col-xs-12.login-blocks
+            h2 Register : 
+            form(action='', method='post')
+              .form-group
+                label(for='userName') UserName
+                input#userName.form-control(type='text')
+              .form-group
+                label(for='passWord') Password
+                input#passWord.form-control(type='password')
+              .form-group
+                label(for='retypePassword')  Retype Password
+                input#retypePassword.form-control(type='password')
+              .text-center
+                a.btn.btn-default(href='/') Register
+
+  // Footer area
+  .footer-area
+    .footer
+      .container
+        .row
+          .col-md-3.col-sm-6.wow.fadeInRight.animated
+            .single-footer
+              h4 About us 
+              .footer-title-line
+              img.wow.pulse(src='/assets/img/footer-logo.png', alt='', data-wow-delay='1s')
+              p
+                | Lorem ipsum dolor cum necessitatibus su quisquam molestias. Vel unde, blanditiis.
+              ul.footer-adress
+                li
+                  i.pe-7s-map-marker.strong  
+                  |  9089 your adress her
+                li
+                  i.pe-7s-mail.strong  
+                  |  email@yourcompany.com
+                li
+                  i.pe-7s-call.strong  
+                  |  +1 908 967 5906
+          .col-md-3.col-sm-6.wow.fadeInRight.animated
+            .single-footer
+              h4 Quick links 
+              .footer-title-line
+              ul.footer-menu
+                li
+                  a(href='properties.html') Properties
+                li
+                  a(href='#') Services
+                li
+                  a(href='submit-property.html') Submit property 
+                li
+                  a(href='contact.html') Contact us
+                li
+                  a(href='faq.html') fqa
+                li
+                  a(href='faq.html') Terms 
+          .col-md-3.col-sm-6.wow.fadeInRight.animated
+            .single-footer
+              h4 Last News
+              .footer-title-line
+              ul.footer-blog
+                li
+                  .col-md-3.col-sm-4.col-xs-4.blg-thumb.p0
+                    a(href='single.html')
+                      img(src='/assets/img/demo/small-proerty-2.jpg')
+                    span.blg-date 12-12-2016
+                  .col-md-8.col-sm-8.col-xs-8.blg-entry
+                    h6
+                      a(href='single.html') Add news functions 
+                    p(style='line-height: 17px; padding: 8px 2px;') Lorem ipsum dolor sit amet, nulla ...
+                li
+                  .col-md-3.col-sm-4.col-xs-4.blg-thumb.p0
+                    a(href='single.html')
+                      img(src='/assets/img/demo/small-proerty-2.jpg')
+                    span.blg-date 12-12-2016
+                  .col-md-8.col-sm-8.col-xs-8.blg-entry
+                    h6
+                      a(href='single.html') Add news functions 
+                    p(style='line-height: 17px; padding: 8px 2px;') Lorem ipsum dolor sit amet, nulla ...
+                li
+                  .col-md-3.col-sm-4.col-xs-4.blg-thumb.p0
+                    a(href='single.html')
+                      img(src='/assets/img/demo/small-proerty-2.jpg')
+                    span.blg-date 12-12-2016
+                  .col-md-8.col-sm-8.col-xs-8.blg-entry
+                    h6
+                      a(href='single.html') Add news functions 
+                    p(style='line-height: 17px; padding: 8px 2px;') Lorem ipsum dolor sit amet, nulla ...
+          .col-md-3.col-sm-6.wow.fadeInRight.animated
+            .single-footer.news-letter
+              h4 Stay in touch
+              .footer-title-line
+              p
+                | Lorem ipsum dolor sit amet, nulla  suscipit similique quisquam molestias. Vel unde, blanditiis.
+              form
+                .input-group
+                  input.form-control(type='text', placeholder='E-mail ... ')
+                  span.input-group-btn
+                    button.btn.btn-primary.subscribe(type='button')
+                      i.pe-7s-paper-plane.pe-2x
+                // /input-group
+              .social.pull-right
+                ul
+                  li
+                    a.wow.fadeInUp.animated(href='https://twitter.com/kimarotec')
+                      i.fa.fa-twitter
+                  li
+                    a.wow.fadeInUp.animated(href='https://www.facebook.com/kimarotec', data-wow-delay='0.2s')
+                      i.fa.fa-facebook
+                  li
+                    a.wow.fadeInUp.animated(href='https://plus.google.com/kimarotec', data-wow-delay='0.3s')
+                      i.fa.fa-google-plus
+                  li
+                    a.wow.fadeInUp.animated(href='https://instagram.com/kimarotec', data-wow-delay='0.4s')
+                      i.fa.fa-instagram
+                  li
+                    a.wow.fadeInUp.animated(href='https://instagram.com/kimarotec', data-wow-delay='0.6s')
+                      i.fa.fa-dribbble
+    .footer-copy.text-center
+      .container
+        .row
+          .pull-left
+            span
+              | (C) 
+              a(href='http://www.KimaroTec.com') KimaroTheme
+              |  , All rights reserved 2016
+          .bottom-menu.pull-right
+            ul
+              li
+                a.wow.fadeInUp.animated(href='#', data-wow-delay='0.2s') Home
+              li
+                a.wow.fadeInUp.animated(href='#', data-wow-delay='0.3s') Property
+              li
+                a.wow.fadeInUp.animated(href='#', data-wow-delay='0.4s') Faq
+              li
+                a.wow.fadeInUp.animated(href='#', data-wow-delay='0.6s') Contact
+  script(src='/assets/js/modernizr-2.6.2.min.js')
+  script(src='/assets/js/jquery-1.10.2.min.js')
+  script(src='/bootstrap/js/bootstrap.min.js')
+  script(src='/assets/js/bootstrap-select.min.js')
+  script(src='/assets/js/bootstrap-hover-dropdown.js')
+  script(src='/assets/js/easypiechart.min.js')
+  script(src='/assets/js/jquery.easypiechart.min.js')
+  script(src='/assets/js/owl.carousel.min.js')
+  script(src='/assets/js/wow.js')
+  script(src='/assets/js/icheck.min.js')
+  script(src='/assets/js/price-range.js')
+  script(src='/assets/js/main.js')
+
