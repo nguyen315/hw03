@@ -1,7 +1,9 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-var productRoute = require('./routes/products.route');
-var userRoute= require('./routes/users.router');
+const express = require('express')
+const bodyParser = require('body-parser')
+
+const indexRoute = require('./routes/index.route')
+const productRoute = require('./routes/products.route')
+const userRoute= require('./routes/users.router')
 
 const app = express();
 const port = 3000;
@@ -18,9 +20,7 @@ app.set('views', './views');
 
 
 
-app.get('/', (req, res) => {
-  res.render('index');
-})
+app.use('/', indexRoute);
 app.use('/products', productRoute);
 app.use('/users',userRoute);
 

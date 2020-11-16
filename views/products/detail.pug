@@ -1,567 +1,341 @@
-doctype html
-//if lt IE 7
-//if IE 7
-//if IE 8
-// [if gt IE 8] <!
-// <![endif]
-head
-  meta(charset='utf-8')
-  meta(http-equiv='X-UA-Compatible', content='IE=edge')
-  title GARO ESTATE | Products Detail
-  meta(name='description', content='GARO is a real-estate template')
-  meta(name='author', content='Kimarotec')
-  meta(name='keyword', content='html5, css, bootstrap, property, real-estate theme , bootstrap template')
-  meta(name='viewport', content='width=device-width, initial-scale=1')
-  link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800', rel='stylesheet', type='text/css')
-  // Place favicon.ico and apple-touch-icon.png in the root directory
-  link(rel='shortcut icon', href='favicon.ico', type='image/x-icon')
-  link(rel='icon', href='favicon.ico', type='image/x-icon')
-  link(rel='stylesheet', href='/assets/css/normalize.css')
-  link(rel='stylesheet', href='/assets/css/font-awesome.min.css')
-  link(rel='stylesheet', href='/assets/css/fontello.css')
-  link(href='/assets/fonts/icon-7-stroke/css/pe-icon-7-stroke.css', rel='stylesheet')
-  link(href='/assets/fonts/icon-7-stroke/css/helper.css', rel='stylesheet')
-  link(href='/assets/css/animate.css', rel='stylesheet', media='screen')
-  link(rel='stylesheet', href='/assets/css/bootstrap-select.min.css')
-  link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
-  link(rel='stylesheet', href='/assets/css/icheck.min_all.css')
-  link(rel='stylesheet', href='/assets/css/price-range.css')
-  link(rel='stylesheet', href='/assets/css/owl.carousel.css')
-  link(rel='stylesheet', href='/assets/css/owl.theme.css')
-  link(rel='stylesheet', href='/assets/css/owl.transitions.css')
-  link(rel='stylesheet', href='/assets/css/style.css')
-  link(rel='stylesheet', href='/assets/css/responsive.css')
-#preloader
-  #status &nbsp;
-// Body content
-.header-connect
-  .container
-    .row
-      .col-md-5.col-sm-8.col-xs-12
-        .header-half.header-call
-          p
-            span
-              i.pe-7s-call
-              |  +1 234 567 7890
-            span
-              i.pe-7s-mail
-              |  your@company.com
-      .col-md-2.col-md-offset-5.col-sm-3.col-sm-offset-1.col-xs-12
-        .header-half.header-social
-          ul.list-inline
-            li
-              a(href='#')
-                i.fa.fa-facebook
-            li
-              a(href='#')
-                i.fa.fa-twitter
-            li
-              a(href='#')
-                i.fa.fa-vine
-            li
-              a(href='#')
-                i.fa.fa-linkedin
-            li
-              a(href='#')
-                i.fa.fa-dribbble
-            li
-              a(href='#')
-                i.fa.fa-instagram
-// End top header
-nav.navbar.navbar-default
-  .container
-    // Brand and toggle get grouped for better mobile display
-    .navbar-header
-      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navigation')
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      a.navbar-brand(href='index.html')
-        img(src='/assets/img/logo.png', alt='')
-    // Collect the nav links, forms, and other content for toggling
-    #navigation.collapse.navbar-collapse.yamm
-      .button.navbar-right
-        button.navbar-btn.nav-button.wow.bounceInRight.login(onclick=" window.open('register.html')", data-wow-delay='0.4s') Login
-        button.navbar-btn.nav-button.wow.fadeInRight(onclick=" window.open('submit-property.html')", data-wow-delay='0.5s') Submit
-      ul.main-nav.nav.navbar-nav.navbar-right
-        li.dropdown.ymm-sw(data-wow-delay='0.1s')
-          a.dropdown-toggle.active(href='index.html', data-toggle='dropdown', data-hover='dropdown', data-delay='200')
-            | Home 
-            b.caret
-          ul.dropdown-menu.navbar-nav
-            li
-              a(href='index-2.html') Home Style 2
-            li
-              a(href='index-3.html') Home Style 3
-            li
-              a(href='index-4.html') Home Style 4
-            li
-              a(href='index-5.html') Home Style 5
-        li.wow.fadeInDown(data-wow-delay='0.1s')
-          a(href='/') Products
-        li.wow.fadeInDown(data-wow-delay='0.1s')
-          a(href='property.html') Property
-        li.dropdown.yamm-fw(data-wow-delay='0.1s')
-          a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='200')
-            | Template 
-            b.caret
-          ul.dropdown-menu
-            li
-              .yamm-content
-                .row
-                  .col-sm-3
-                    h5 Home pages
-                    ul
-                      li
-                        a(href='index.html') Home Style 1
-                      li
-                        a(href='index-2.html') Home Style 2
-                      li
-                        a(href='index-3.html') Home Style 3
-                      li
-                        a(href='index-4.html') Home Style 4
-                      li
-                        a(href='index-5.html') Home Style 5
-                  .col-sm-3
-                    h5 Pages and blog
-                    ul
-                      li
-                        a(href='blog.html') Blog listing
-                      li
-                        a(href='single.html') Blog Post (full)
-                      li
-                        a(href='single-right.html') Blog Post (Right)
-                      li
-                        a(href='single-left.html') Blog Post (left)
-                      li
-                        a(href='contact.html') Contact style (1)
-                      li
-                        a(href='contact-3.html') Contact style (2)
-                      li
-                        a(href='contact_3.html') Contact style (3)
-                      li
-                        a(href='faq.html') FAQ page
-                      li
-                        a(href='404.html') 404 page
-                  .col-sm-3
-                    h5 Property
-                    ul
-                      li
-                        a(href='property-1.html') Property pages style (1)
-                      li
-                        a(href='property-2.html') Property pages style (2)
-                      li
-                        a(href='property-3.html') Property pages style (3)
-                    h5 Properties list
-                    ul
-                      li
-                        a(href='properties.html') Properties list style (1)
-                      li
-                        a(href='properties-2.html') Properties list style (2)
-                      li
-                        a(href='properties-3.html') Properties list style (3)
-                  .col-sm-3
-                    h5 Property process
-                    ul
-                      li
-                        a(href='submit-property.html') Submit - step 1
-                      li
-                        a(href='submit-property.html') Submit - step 2
-                      li
-                        a(href='submit-property.html') Submit - step 3
-                    h5 User account
-                    ul
-                      li
-                        a(href='register.html') Register / login
-                      li
-                        a(href='user-properties.html') Your properties
-                      li
-                        a(href='submit-property.html') Submit property
-                      li
-                        a(href='change-password.html') Change password
-                      li
-                        a(href='user-profile.html') Your profile
-              // /.yamm-content
-        li.wow.fadeInDown(data-wow-delay='0.4s')
-          a(href='contact.html') Contact
-    // /.navbar-collapse
-  // /.container-fluid
-// End of nav bar
-.page-head
-  .container
-    .row
-      .page-head-content
-        h1.page-title FAQ PAge
-// End page header
-.content-area.blog-page.padding-top-40(style='background-color: #FCFCFC; padding-bottom: 55px;')
-  .container
-    .row
-      .blog-asside-right.col-md-3
-        .panel.panel-default.sidebar-menu.wow.fadeInRight.animated
-          .panel-heading
-            h3.panel-title Text widget
-          .panel-body.text-widget
-            p
-              | Improved own provided blessing may peculiar domestic. Sight house has sex never. No visited raising gravity outward subject my cottage mr be. Hold do at tore in park feet near my case.
-        .panel.panel-default.sidebar-menu.wow.fadeInRight.animated
-          .panel-heading
-            h3.panel-title Search
-          .panel-body
-            form(role='search')
-              .input-group
-                input.form-control(placeholder='Search', type='text')
-                span.input-group-btn
-                  button.btn.btn-smal(type='submit')
-                    i.fa.fa-search
-        .panel.panel-default.sidebar-menu.wow.fadeInRight.animated
-          .panel-heading
-            h3.panel-title Recommended
-          .panel-body.recent-property-widget
-            ul
-              li
-                .col-md-3.col-sm-3.col-xs-3.blg-thumb.p0
-                  a(href='single.html')
-                    img(src='/assets/img/demo/small-property-2.jpg')
-                  span.property-seeker
-                    b.b-1 A
-                    b.b-2 S
-                .col-md-8.col-sm-8.col-xs-8.blg-entry
-                  h6
-                    a(href='single.html') Super nice villa 
-                  span.property-price 3000000$
-              li
-                .col-md-3.col-sm-3.col-xs-3.blg-thumb.p0
-                  a(href='single.html')
-                    img(src='/assets/img/demo/small-property-1.jpg')
-                  span.property-seeker
-                    b.b-1 A
-                    b.b-2 S
-                .col-md-8.col-sm-8.col-xs-8.blg-entry
-                  h6
-                    a(href='single.html') Super nice villa 
-                  span.property-price 3000000$
-              li
-                .col-md-3.col-sm-3.col-xs-3.blg-thumb.p0
-                  a(href='single.html')
-                    img(src='/assets/img/demo/small-property-3.jpg')
-                  span.property-seeker
-                    b.b-1 A
-                    b.b-2 S
-                .col-md-8.col-sm-8.col-xs-8.blg-entry
-                  h6
-                    a(href='single.html') Super nice villa 
-                  span.property-price 3000000$
-              li
-                .col-md-3.col-sm-3.col-xs-3.blg-thumb.p0
-                  a(href='single.html')
-                    img(src='/assets/img/demo/small-property-2.jpg')
-                  span.property-seeker
-                    b.b-1 A
-                    b.b-2 S
-                .col-md-8.col-sm-8.col-xs-8.blg-entry
-                  h6
-                    a(href='single.html') Super nice villa 
-                  span.property-price 3000000$
-        .panel.sidebar-menu.wow.fadeInRight.animated
-          .panel-heading
-            h3.panel-title Tags
-          .panel-body
-            ul.tag-cloud
-              li
-                a(href='#')
-                  i.fa.fa-tags
-                  |  html5
-              li
-                a(href='#')
-                  i.fa.fa-tags
-                  |  css3
-              li
-                a(href='#')
-                  i.fa.fa-tags
-                  |  jquery
-              li
-                a(href='#')
-                  i.fa.fa-tags
-                  |  ajax
-              li
-                a(href='#')
-                  i.fa.fa-tags
-                  |  php
-              li
-                a(href='#')
-                  i.fa.fa-tags
-                  |  responsive
-              li
-                a(href='#')
-                  i.fa.fa-tags
-                  |  visio
-              li
-                a(href='#')
-                  i.fa.fa-tags
-                  |  bootstrap
-      .blog-lst.col-md-9.p0
-        section#id-100.post.single
-          .post-header.single
-            div
-              h2.wow.fadeInLeft.animated FASHIN NOW 2016
-              .title-line.wow.fadeInRight.animated
-            .row.wow.fadeInRight.animated
-              .col-sm-6
-                p.author-category
-                  | By 
-                  a(href='#') John Snow
-                  |                                             in 
-                  a(href='blog.html') Webdesign
-              .col-sm-6.right
-                p.date-comments
-                  a(href='single.html')
-                    i.fa.fa-calendar-o
-                    |  June 20, 2013
-                  a(href='single.html')
-                    i.fa.fa-comment-o
-                    |  8 Comments
-            .image.wow.fadeInRight.animated
-              img.img-responsive(src='/assets/img/blog2.jpg', alt='Example blog post alt')
-          #post-content.post-body.single.wow.fadeInLeft.animated
-            p
-              strong Pellentesque habitant morbi tristique
-              |                                     senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
-              |                                     semper. 
-              em Aenean ultricies mi vitae est.
-              |                                     Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, 
-              code commodo vitae
-              | , ornare sit amet, wisi. Aenean
-              |                                     fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. 
-              a(href='#') Donec non enim
-              |  in turpis pulvinar facilisis. Ut felis.
-            p
-              img.img-responsive(src='/assets/img/blog10.jpg', alt='Example blog post alt')
-            h2 Header Level 2
-            ol
-              li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-              li Aliquam tincidunt mauris eu risus.
-            blockquote
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada
-                | tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
-            h3 Header Level 3
-            p
-              | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-              | ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
-              ul
-                li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                li Aliquam tincidunt mauris eu risus.
-            p
-              img.img-responsive(src='/assets/img/blog.jpg', alt='Example blog post alt')
-            p
-              | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-              | condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros
-              | eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
-          .post-footer.single.wow.fadeInBottum.animated
-            ul.pager
-              li.previous
-                a(href='#')
-                  i
-                  | &larr; Older
-              li.next.disabled
-                a(href='#')
-                  | Newer &rarr;
-                  i
-        section.about-autor
-        section#comments.comments.wow.fadeInRight.animated
-          h4.text-uppercase.wow.fadeInLeft.animated 3 comments
-          .row.comment
-            .col-sm-3.col-md-2.text-center-xs
-              p
-                img.img-responsive.img-circle(src='/assets/img/client-face1.png', alt='')
-            .col-sm-9.col-md-10
-              h5.text-uppercase Julie Alma
-              p.posted
-                i.fa.fa-clock-o
-                |  September 23, 2011 at 12:00 am
-              p
-                | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
-                | Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-              p.reply
-                a(href='#')
-                  i.fa.fa-reply
-                  |  Reply
-          // /.comment
-          .row.comment.last
-            .col-sm-3.col-md-2.text-center-xs
-              p
-                img.img-responsive.img-circle(src='/assets/img/client-face2.png', alt='')
-            .col-sm-9.col-md-10
-              h5.text-uppercase Louise Armero
-              p.posted
-                i.fa.fa-clock-o
-                |  September 23, 2012 at 12:00 am
-              p
-                | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
-                | Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-              p.reply
-                a(href='#')
-                  i.fa.fa-reply
-                  |  Reply
-          // /.comment
-        section#comment-form.add-comments
-          h4.text-uppercase.wow.fadeInLeft.animated Leave comment
-          form
-            .row.wow.fadeInLeft.animated
-              .col-sm-6
-                .form-group
-                  label(for='name')
-                    | Name 
-                    span.required *
-                  input#name.form-control(type='text')
-            .row.wow.fadeInLeft.animated
-              .col-sm-6
-                .form-group
-                  label(for='email')
-                    | Email 
-                    span.required *
-                  input#email.form-control(type='text')
-            .row.wow.fadeInLeft.animated
-              .col-sm-12
-                .form-group
-                  label(for='comment')
-                    | Comment 
-                    span.required *
-                  textarea#comment.form-control(rows='4')
-            .row.wow.fadeInLeft.animated
-              .col-sm-12.text-right
-                button.btn.btn-primary
-                  i.fa.fa-comment-o
-                  |  Post comment
-// Footer area
-.footer-area
-  .footer
+extends ../layouts/layout.pug
+
+block extra-header
+  link(rel='stylesheet' href='/assets/css/lightslider.min.css')
+
+block content
+  .page-head
     .container
       .row
-        .col-md-3.col-sm-6.wow.fadeInRight.animated
-          .single-footer
-            h4 About us 
-            .footer-title-line
-            img.wow.pulse(src='/assets/img/footer-logo.png', alt='', data-wow-delay='1s')
-            p
-              | Lorem ipsum dolor cum necessitatibus su quisquam molestias. Vel unde, blanditiis.
-            ul.footer-adress
-              li
-                i.pe-7s-map-marker.strong  
-                |  9089 your adress her
-              li
-                i.pe-7s-mail.strong  
-                |  email@yourcompany.com
-              li
-                i.pe-7s-call.strong  
-                |  +1 908 967 5906
-        .col-md-3.col-sm-6.wow.fadeInRight.animated
-          .single-footer
-            h4 Quick links 
-            .footer-title-line
-            ul.footer-menu
-              li
-                a(href='/') Products
-              li
-                a(href='#') Services
-              li
-                a(href='submit-property.html') Submit property 
-              li
-                a(href='contact.html') Contact us
-              li
-                a(href='faq.html') fqa
-              li
-                a(href='faq.html') Terms 
-        .col-md-3.col-sm-6.wow.fadeInRight.animated
-          .single-footer
-            h4 Last News
-            .footer-title-line
-            ul.footer-blog
-              li
-                .col-md-3.col-sm-4.col-xs-4.blg-thumb.p0
-                  a(href='single.html')
-                    img(src='/assets/img/demo/small-proerty-2.jpg')
-                  span.blg-date 12-12-2016
-                .col-md-8.col-sm-8.col-xs-8.blg-entry
-                  h6
-                    a(href='single.html') Add news functions 
-                  p(style='line-height: 17px; padding: 8px 2px;') Lorem ipsum dolor sit amet, nulla ...
-              li
-                .col-md-3.col-sm-4.col-xs-4.blg-thumb.p0
-                  a(href='single.html')
-                    img(src='/assets/img/demo/small-proerty-2.jpg')
-                  span.blg-date 12-12-2016
-                .col-md-8.col-sm-8.col-xs-8.blg-entry
-                  h6
-                    a(href='single.html') Add news functions 
-                  p(style='line-height: 17px; padding: 8px 2px;') Lorem ipsum dolor sit amet, nulla ...
-              li
-                .col-md-3.col-sm-4.col-xs-4.blg-thumb.p0
-                  a(href='single.html')
-                    img(src='/assets/img/demo/small-proerty-2.jpg')
-                  span.blg-date 12-12-2016
-                .col-md-8.col-sm-8.col-xs-8.blg-entry
-                  h6
-                    a(href='single.html') Add news functions 
-                  p(style='line-height: 17px; padding: 8px 2px;') Lorem ipsum dolor sit amet, nulla ...
-        .col-md-3.col-sm-6.wow.fadeInRight.animated
-          .single-footer.news-letter
-            h4 Stay in touch
-            .footer-title-line
-            p
-              | Lorem ipsum dolor sit amet, nulla  suscipit similique quisquam molestias. Vel unde, blanditiis.
-            form
-              .input-group
-                input.form-control(type='text', placeholder='E-mail ... ')
-                span.input-group-btn
-                  button.btn.btn-primary.subscribe(type='button')
-                    i.pe-7s-paper-plane.pe-2x
-              // /input-group
-            .social.pull-right
-              ul
-                li
-                  a.wow.fadeInUp.animated(href='https://twitter.com/kimarotec')
-                    i.fa.fa-twitter
-                li
-                  a.wow.fadeInUp.animated(href='https://www.facebook.com/kimarotec', data-wow-delay='0.2s')
-                    i.fa.fa-facebook
-                li
-                  a.wow.fadeInUp.animated(href='https://plus.google.com/kimarotec', data-wow-delay='0.3s')
-                    i.fa.fa-google-plus
-                li
-                  a.wow.fadeInUp.animated(href='https://instagram.com/kimarotec', data-wow-delay='0.4s')
-                    i.fa.fa-instagram
-                li
-                  a.wow.fadeInUp.animated(href='https://instagram.com/kimarotec', data-wow-delay='0.6s')
-                    i.fa.fa-dribbble
-  .footer-copy.text-center
+        .page-head-content
+          h1.page-title Chi tiết sách
+  // End page header
+  // property area
+  .content-area.single-property(style='background-color: #FCFCFC;')
     .container
-      .row
-        .pull-left
-          span
-            | (C) 
-            a(href='http://www.KimaroTec.com') KimaroTheme
-            |  , All rights reserved 2016
-        .bottom-menu.pull-right
-          ul
-            li
-              a.wow.fadeInUp.animated(href='#', data-wow-delay='0.2s') Home
-            li
-              a.wow.fadeInUp.animated(href='#', data-wow-delay='0.3s') Property
-            li
-              a.wow.fadeInUp.animated(href='#', data-wow-delay='0.4s') Faq
-            li
-              a.wow.fadeInUp.animated(href='#', data-wow-delay='0.6s') Contact
-script(src='/assets/js/modernizr-2.6.2.min.js')
-script(src='/assets/js/jquery-1.10.2.min.js')
-script(src='/bootstrap/js/bootstrap.min.js')
-script(src='/assets/js/bootstrap-select.min.js')
-script(src='/assets/js/bootstrap-hover-dropdown.js')
-script(src='/assets/js/easypiechart.min.js')
-script(src='/assets/js/jquery.easypiechart.min.js')
-script(src='/assets/js/owl.carousel.min.js')
-script(src='/assets/js/wow.js')
-script(src='/assets/js/icheck.min.js')
-script(src='/assets/js/price-range.js')
-script(src='/assets/js/main.js')
+      .clearfix.padding-top-40
+        .col-md-8.single-property-content
+          .row
+            .light-slide-item
+              .clearfix
+                .favorite-and-print
+                  a.add-to-fav(href='#login-modal' data-toggle='modal')
+                    i.fa.fa-star-o
+                  a.printer-icon(href='javascript:window.print()')
+                    i.fa.fa-print
+                ul#image-gallery.gallery.list-unstyled.cS-hidden
+                  li(data-thumb='/assets/img/property-1/property1.jpg')
+                    img(src='/assets/img/property-1/property1.jpg')
+                  li(data-thumb='/assets/img/property-1/property3.jpg')
+                    img(src='/assets/img/property-1/property3.jpg')
+                  li(data-thumb='/assets/img/property-1/property4.jpg')
+                    img(src='/assets/img/property-1/property4.jpg')
+          .single-property-wrapper
+            .single-property-header
+              h1.property-title.pull-left #{product.title}
+              span.property-price.pull-right #{product.basePrice} VND
+            //- .property-meta.entry-meta.clearfix
+            //-   .col-xs-3.col-sm-3.col-md-3.p-b-15
+            //-     span.property-info-icon.icon-tag
+            //-       svg(xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewbox='0 0 48 48')
+            //-         path.meta-icon(fill-rule='evenodd' clip-rule='evenodd' fill='#FFA500' d='M47.199 24.176l-23.552-23.392c-.504-.502-1.174-.778-1.897-.778l-19.087.09c-.236.003-.469.038-.696.1l-.251.1-.166.069c-.319.152-.564.321-.766.529-.497.502-.781 1.196-.778 1.907l.092 19.124c.003.711.283 1.385.795 1.901l23.549 23.389c.221.218.482.393.779.523l.224.092c.26.092.519.145.78.155l.121.009h.012c.239-.003.476-.037.693-.098l.195-.076.2-.084c.315-.145.573-.319.791-.539l18.976-19.214c.507-.511.785-1.188.781-1.908-.003-.72-.287-1.394-.795-1.899zm-35.198-9.17c-1.657 0-3-1.345-3-3 0-1.657 1.343-3 3-3 1.656 0 2.999 1.343 2.999 3 0 1.656-1.343 3-2.999 3z')
+            //-     span.property-info-entry
+            //-       span.property-info-label Status
+            //-       span.property-info-value For Sale
+            //-   .col-xs-3.col-sm-3.col-md-3.p-b-15
+            //-     span.property-info.icon-area
+            //-       svg(xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewbox='0 0 48 48')
+            //-         path.meta-icon(fill='#FFA500' d='M46 16v-12c0-1.104-.896-2.001-2-2.001h-12c0-1.103-.896-1.999-2.002-1.999h-11.997c-1.105 0-2.001.896-2.001 1.999h-12c-1.104 0-2 .897-2 2.001v12c-1.104 0-2 .896-2 2v11.999c0 1.104.896 2 2 2v12.001c0 1.104.896 2 2 2h12c0 1.104.896 2 2.001 2h11.997c1.106 0 2.002-.896 2.002-2h12c1.104 0 2-.896 2-2v-12.001c1.104 0 2-.896 2-2v-11.999c0-1.104-.896-2-2-2zm-4.002 23.998c0 1.105-.895 2.002-2 2.002h-31.998c-1.105 0-2-.896-2-2.002v-31.999c0-1.104.895-1.999 2-1.999h31.998c1.105 0 2 .895 2 1.999v31.999zm-5.623-28.908c-.123-.051-.256-.078-.387-.078h-11.39c-.563 0-1.019.453-1.019 1.016 0 .562.456 1.017 1.019 1.017h8.935l-20.5 20.473v-8.926c0-.562-.455-1.017-1.018-1.017-.564 0-1.02.455-1.02 1.017v11.381c0 .562.455 1.016 1.02 1.016h11.39c.562 0 1.017-.454 1.017-1.016 0-.563-.455-1.019-1.017-1.019h-8.933l20.499-20.471v8.924c0 .563.452 1.018 1.018 1.018.561 0 1.016-.455 1.016-1.018v-11.379c0-.132-.025-.264-.076-.387-.107-.249-.304-.448-.554-.551z')
+            //-     span.property-info-entry
+            //-       span.property-info-label Area
+            //-       span.property-info-value
+            //-         | 3500
+            //-         b.property-info-unit Sq Ft
+            //-   .col-xs-3.col-sm-3.col-md-3.p-b-15
+            //-     span.property-info-icon.icon-bed
+            //-       svg(xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewbox='0 0 48 48')
+            //-         path.meta-icon(fill='#FFA500' d='M21 48.001h-19c-1.104 0-2-.896-2-2v-31c0-1.104.896-2 2-2h19c1.106 0 2 .896 2 2v31c0 1.104-.895 2-2 2zm0-37.001h-19c-1.104 0-2-.895-2-1.999v-7.001c0-1.104.896-2 2-2h19c1.106 0 2 .896 2 2v7.001c0 1.104-.895 1.999-2 1.999zm25 37.001h-19c-1.104 0-2-.896-2-2v-31c0-1.104.896-2 2-2h19c1.104 0 2 .896 2 2v31c0 1.104-.896 2-2 2zm0-37.001h-19c-1.104 0-2-.895-2-1.999v-7.001c0-1.104.896-2 2-2h19c1.104 0 2 .896 2 2v7.001c0 1.104-.896 1.999-2 1.999z')
+            //-     span.property-info-entry
+            //-       span.property-info-label Bedrooms
+            //-       span.property-info-value 3
+            //-   .col-xs-3.col-sm-3.col-md-3.p-b-15
+            //-     span.property-info-icon.icon-bath
+            //-       svg(xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewbox='0 0 48 48')
+            //-         path.meta-icon(fill='#FFA500' d='M37.003 48.016h-4v-3.002h-18v3.002h-4.001v-3.699c-4.66-1.65-8.002-6.083-8.002-11.305v-4.003h-3v-3h48.006v3h-3.001v4.003c0 5.223-3.343 9.655-8.002 11.305v3.699zm-30.002-24.008h-4.001v-17.005s0-7.003 8.001-7.003h1.004c.236 0 7.995.061 7.995 8.003l5.001 4h-14l5-4-.001.01.001-.009s.938-4.001-3.999-4.001h-1s-4 0-4 3v17.005000000000003h-.001z')
+            //-     span.property-info-entry
+            //-       span.property-info-label Bathrooms
+            //-       span.property-info-value 3.5
+            //-   .col-xs-3.col-sm-3.col-md-3.p-b-15
+            //-     span.property-info-icon.icon-garage
+            //-       svg(xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewbox='0 0 48 48')
+            //-         path.meta-icon(fill='#FFA500' d='M44 0h-40c-2.21 0-4 1.791-4 4v44h6v-40c0-1.106.895-2 2-2h31.999c1.106 0 2.001.895 2.001 2v40h6v-44c0-2.209-1.792-4-4-4zm-36 8.001h31.999v2.999h-31.999zm0 18h6v5.999h-2c-1.104 0-2 .896-2 2.001v6.001c0 1.103.896 1.998 2 1.998h2v2.001c0 1.104.896 2 2 2s2-.896 2-2v-2.001h11.999v2.001c0 1.104.896 2 2.001 2 1.104 0 2-.896 2-2v-2.001h2c1.104 0 2-.895 2-1.998v-6.001c0-1.105-.896-2.001-2-2.001h-2v-5.999h5.999v-3h-31.999v3zm8 12.999c-1.104 0-2-.895-2-1.999s.896-2 2-2 2 .896 2 2-.896 1.999-2 1.999zm10.5 2h-5c-.276 0-.5-.225-.5-.5 0-.273.224-.498.5-.498h5c.275 0 .5.225.5.498 0 .275-.225.5-.5.5zm1-2h-7c-.275 0-.5-.225-.5-.5s.226-.499.5-.499h7c.275 0 .5.224.5.499s-.225.5-.5.5zm-6.5-2.499c0-.276.224-.5.5-.5h5c.275 0 .5.224.5.5s-.225.5-.5.5h-5c-.277 0-.5-.224-.5-.5zm11 2.499c-1.104 0-2.001-.895-2.001-1.999s.896-2 2.001-2c1.104 0 2 .896 2 2s-.896 1.999-2 1.999zm0-12.999v5.999h-16v-5.999h16zm-24-13.001h31.999v3h-31.999zm0 5h31.999v3h-31.999z')
+            //-     span.property-info-entry
+            //-       span.property-info-label Garages
+            //-       span.property-info-value 2
+            // .property-meta
+            .section
+              h4.s-property-title Description
+              .s-property-content
+                p
+                  | Nulla quis dapibus nisl. Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium. Nullam sed arcu ultricies commodo arcu nec pretium. Nullam sed arcu ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium. Nullam sed arcu ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium. Nullam sed arcu ultricies
+            // End description area
+            .section.additional-details
+              h4.s-property-title Additional Details
+              ul.additional-details-list.clearfix
+                li
+                  span.col-xs-6.col-sm-4.col-md-4.add-d-title Waterfront
+                  span.col-xs-6.col-sm-8.col-md-8.add-d-entry Yes
+                li
+                  span.col-xs-6.col-sm-4.col-md-4.add-d-title Built In
+                  span.col-xs-6.col-sm-8.col-md-8.add-d-entry 2003
+                li
+                  span.col-xs-6.col-sm-4.col-md-4.add-d-title Parking
+                  span.col-xs-6.col-sm-8.col-md-8.add-d-entry 2 Or More Spaces,Covered Parking,Valet Parking
+                li
+                  span.col-xs-6.col-sm-4.col-md-4.add-d-title Waterfront
+                  span.col-xs-6.col-sm-8.col-md-8.add-d-entry Yes
+                li
+                  span.col-xs-6.col-sm-4.col-md-4.add-d-title View
+                  span.col-xs-6.col-sm-8.col-md-8.add-d-entry Intracoastal View,Direct ew
+                li
+                  span.col-xs-6.col-sm-4.col-md-4.add-d-title Waterfront Description:
+                  span.col-xs-6.col-sm-8.col-md-8.add-d-entry Intracoastal Front,Ocean Access
+            // End additional-details area
+            //- .section.property-features
+            //-   h4.s-property-title Features
+            //-   ul
+            //-     li
+            //-       a(href='properties.html') Swimming Pool
+            //-     li
+            //-       a(href='properties.html') 3 Stories
+            //-     li
+            //-       a(href='properties.html') Central Cooling
+            //-     li
+            //-       a(href='properties.html') Jog Path 2
+            //-     li
+            //-       a(href='properties.html') 2 Lawn
+            //-     li
+            //-       a(href='properties.html') Bike Path
+            //- // End features area
+            
+        .col-md-4.p0
+          aside.sidebar.sidebar-property.blog-asside-right
+            .dealer-widget
+              .dealer-content
+                .inner-wrapper
+                  .clear
+                    .col-xs-4.col-sm-4.dealer-face
+                      a(href='')
+                        img.img-circle(src='/assets/img/client-face1.png')
+                    .col-xs-8.col-sm-8
+                      h3.dealer-name
+                        a(href='') Nathan James
+                        span Real Estate Agent
+                      .dealer-social-media
+                        a.twitter(target='_blank' href='')
+                          i.fa.fa-twitter
+                        a.facebook(target='_blank' href='')
+                          i.fa.fa-facebook
+                        a.gplus(target='_blank' href='')
+                          i.fa.fa-google-plus
+                        a.linkedin(target='_blank' href='')
+                          i.fa.fa-linkedin
+                        a.instagram(target='_blank' href='')
+                          i.fa.fa-instagram
+                  .clear
+                    ul.dealer-contacts
+                      li
+                        i.pe-7s-map-marker.strong  
+                        |  9089 your adress her
+                      li
+                        i.pe-7s-mail.strong  
+                        |  email@yourcompany.com
+                      li
+                        i.pe-7s-call.strong  
+                        |  +1 908 967 5906
+                    p
+                      | Duis mollis  blandit tempus porttitor curabiturDuis mollis  blandit tempus porttitor curabitur , est non&mldr;
+            //- .panel.panel-default.sidebar-menu.similar-property-wdg.wow.fadeInRight.animated
+            //-   .panel-heading
+            //-     h3.panel-title Similar Properties
+            //-   .panel-body.recent-property-widget
+            //-     ul
+            //-       li
+            //-         .col-md-3.col-sm-3.col-xs-3.blg-thumb.p0
+            //-           a(href='single.html')
+            //-             img(src='assets/img/demo/small-property-2.jpg')
+            //-           span.property-seeker
+            //-             b.b-1 A
+            //-             b.b-2 S
+            //-         .col-md-8.col-sm-8.col-xs-8.blg-entry
+            //-           h6
+            //-             a(href='single.html') Super nice villa 
+            //-           span.property-price 3000000$
+            //-       li
+            //-         .col-md-3.col-sm-3.col-xs-3.blg-thumb.p0
+            //-           a(href='single.html')
+            //-             img(src='assets/img/demo/small-property-1.jpg')
+            //-           span.property-seeker
+            //-             b.b-1 A
+            //-             b.b-2 S
+            //-         .col-md-8.col-sm-8.col-xs-8.blg-entry
+            //-           h6
+            //-             a(href='single.html') Super nice villa 
+            //-           span.property-price 3000000$
+            //-       li
+            //-         .col-md-3.col-sm-3.col-xs-3.blg-thumb.p0
+            //-           a(href='single.html')
+            //-             img(src='assets/img/demo/small-property-3.jpg')
+            //-           span.property-seeker
+            //-             b.b-1 A
+            //-             b.b-2 S
+            //-         .col-md-8.col-sm-8.col-xs-8.blg-entry
+            //-           h6
+            //-             a(href='single.html') Super nice villa 
+            //-           span.property-price 3000000$
+            //-       li
+            //-         .col-md-3.col-sm-3.col-xs-3.blg-thumb.p0
+            //-           a(href='single.html')
+            //-             img(src='assets/img/demo/small-property-2.jpg')
+            //-           span.property-seeker
+            //-             b.b-1 A
+            //-             b.b-2 S
+            //-         .col-md-8.col-sm-8.col-xs-8.blg-entry
+            //-           h6
+            //-             a(href='single.html') Super nice villa 
+            //-           span.property-price 3000000$
+            //- .panel.panel-default.sidebar-menu.wow.fadeInRight.animated
+            //-   .panel-heading
+            //-     h3.panel-title Ads her  
+            //-   .panel-body.recent-property-widget
+            //-     img(src='assets/img/ads.jpg')
+            //- .panel.panel-default.sidebar-menu.wow.fadeInRight.animated
+            //-   .panel-heading
+            //-     h3.panel-title Smart search
+            //-   .panel-body.search-widget
+            //-     form.form-inline(action='')
+            //-       fieldset
+            //-         .row
+            //-           .col-xs-12
+            //-             input.form-control(type='text' placeholder='Key word')
+            //-       fieldset
+            //-         .row
+            //-           .col-xs-6
+            //-             select#lunchBegins.selectpicker(data-live-search='true' data-live-search-style='begins' title='Select Your City')
+            //-               option New york, CA
+            //-               option Paris
+            //-               option Casablanca
+            //-               option Tokyo
+            //-               option Marraekch
+            //-               option kyoto , shibua
+            //-           .col-xs-6
+            //-             select#basic.selectpicker.show-tick.form-control
+            //-               option  -Status- 
+            //-               option Rent 
+            //-               option Boy
+            //-               option used
+            //-       fieldset.padding-5
+            //-         .row
+            //-           .col-xs-6
+            //-             label(for='price-range') Price range ($):
+            //-             input#price-range.span2(type='text' value='' data-slider-min='0' data-slider-max='600' data-slider-step='5' data-slider-value='[0,450]')
+            //-             br
+            //-             b.pull-left.color 2000$
+            //-             b.pull-right.color 100000$
+            //-           .col-xs-6
+            //-             label(for='property-geo') Property geo (m2) :
+            //-             input#property-geo.span2(type='text' value='' data-slider-min='0' data-slider-max='600' data-slider-step='5' data-slider-value='[50,450]')
+            //-             br
+            //-             b.pull-left.color 40m
+            //-             b.pull-right.color 12000m
+            //-       fieldset.padding-5
+            //-         .row
+            //-           .col-xs-6
+            //-             label(for='price-range') Min baths :
+            //-             input#min-baths.span2(type='text' value='' data-slider-min='0' data-slider-max='600' data-slider-step='5' data-slider-value='[250,450]')
+            //-             br
+            //-             b.pull-left.color 1
+            //-             b.pull-right.color 120
+            //-           .col-xs-6
+            //-             label(for='property-geo') Min bed :
+            //-             input#min-bed.span2(type='text' value='' data-slider-min='0' data-slider-max='600' data-slider-step='5' data-slider-value='[250,450]')
+            //-             br
+            //-             b.pull-left.color 1
+            //-             b.pull-right.color 120
+            //-       fieldset.padding-5
+            //-         .row
+            //-           .col-xs-6
+            //-             .checkbox
+            //-               label
+            //-                 input(type='checkbox' checked='')
+            //-                 |  Fire Place
+            //-           .col-xs-6
+            //-             .checkbox
+            //-               label
+            //-                 input(type='checkbox')
+            //-                 |  Dual Sinks
+            //-       fieldset.padding-5
+            //-         .row
+            //-           .col-xs-6
+            //-             .checkbox
+            //-               label
+            //-                 input(type='checkbox' checked='')
+            //-                 |  Swimming Pool
+            //-           .col-xs-6
+            //-             .checkbox
+            //-               label
+            //-                 input(type='checkbox' checked='')
+            //-                 |  2 Stories
+            //-       fieldset.padding-5
+            //-         .row
+            //-           .col-xs-6
+            //-             .checkbox
+            //-               label
+            //-                 input(type='checkbox')
+            //-                 |  Laundry Room
+            //-           .col-xs-6
+            //-             .checkbox
+            //-               label
+            //-                 input(type='checkbox')
+            //-                 |  Emergency Exit
+            //-       fieldset.padding-5
+            //-         .row
+            //-           .col-xs-6
+            //-             .checkbox
+            //-               label
+            //-                 input(type='checkbox' checked='')
+            //-                 |  Jog Path
+            //-           .col-xs-6
+            //-             .checkbox
+            //-               label
+            //-                 input(type='checkbox')
+            //-                 |  26&apos; Ceilings
+            //-       fieldset.padding-5
+            //-         .row
+            //-           .col-xs-12
+            //-             .checkbox
+            //-               label
+            //-                 input(type='checkbox')
+            //-                 |  Hurricane Shutters
+            //-       fieldset
+            //-         .row
+            //-           .col-xs-12
+            //-             input.button.btn.largesearch-btn(value='Search' type='submit')
+
+block extra-footer
+  script(type='text/javascript' src='/assets/js/lightslider.min.js')
+  script.
+    $(document).ready(function () {
+    $('#image-gallery').lightSlider({
+    gallery: true,
+    item: 1,
+    thumbItem: 9,
+    slideMargin: 0,
+    speed: 500,
+    auto: true,
+    loop: true,
+    onSliderLoad: function () {
+    $('#image-gallery').removeClass('cS-hidden');
+    }
+    });
+    });
