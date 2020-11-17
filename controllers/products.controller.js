@@ -21,11 +21,11 @@ exports.detail= function(req, res, next) {
     const product = productsModel.productById(productId);
     
 
-
+    console.log(product)
     if (product) {
-    res.render('products/detail', { 
-        title: 'Products Detail',
-        product 
+        res.render('products/detail', { 
+            title: 'Products Detail',
+            product 
     });
     }
     else {

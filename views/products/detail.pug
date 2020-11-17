@@ -24,12 +24,15 @@ block content
                   a.printer-icon(href='javascript:window.print()')
                     i.fa.fa-print
                 ul#image-gallery.gallery.list-unstyled.cS-hidden
-                  li(data-thumb='/assets/img/property-1/property1.jpg')
-                    img(src='/assets/img/property-1/property1.jpg')
-                  li(data-thumb='/assets/img/property-1/property3.jpg')
-                    img(src='/assets/img/property-1/property3.jpg')
-                  li(data-thumb='/assets/img/property-1/property4.jpg')
-                    img(src='/assets/img/property-1/property4.jpg')
+                  each img in product.imgs
+                    li(data-thumb= img)
+                      img.detail-height(src= img)
+                  //- li(data-thumb='/assets/img/property-1/property1.jpg')
+                  //-   img(src='/assets/img/property-1/property1.jpg')
+                  //- li(data-thumb='/assets/img/property-1/property3.jpg')
+                  //-   img(src='/assets/img/property-1/property3.jpg')
+                  //- li(data-thumb='/assets/img/property-1/property4.jpg')
+                  //-   img(src='/assets/img/property-1/property4.jpg')
           .single-property-wrapper
             .single-property-header
               h1.property-title.pull-left #{product.title}
@@ -40,28 +43,6 @@ block content
               .s-property-content
                 p
                   | Nulla quis dapibus nisl. Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium. Nullam sed arcu ultricies commodo arcu nec pretium. Nullam sed arcu ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium. Nullam sed arcu ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium. Nullam sed arcu ultricies
-            // End description area
-            .section.additional-details
-              h4.s-property-title Additional Details
-              ul.additional-details-list.clearfix
-                li
-                  span.col-xs-6.col-sm-4.col-md-4.add-d-title Waterfront
-                  span.col-xs-6.col-sm-8.col-md-8.add-d-entry Yes
-                li
-                  span.col-xs-6.col-sm-4.col-md-4.add-d-title Built In
-                  span.col-xs-6.col-sm-8.col-md-8.add-d-entry 2003
-                li
-                  span.col-xs-6.col-sm-4.col-md-4.add-d-title Parking
-                  span.col-xs-6.col-sm-8.col-md-8.add-d-entry 2 Or More Spaces,Covered Parking,Valet Parking
-                li
-                  span.col-xs-6.col-sm-4.col-md-4.add-d-title Waterfront
-                  span.col-xs-6.col-sm-8.col-md-8.add-d-entry Yes
-                li
-                  span.col-xs-6.col-sm-4.col-md-4.add-d-title View
-                  span.col-xs-6.col-sm-8.col-md-8.add-d-entry Intracoastal View,Direct ew
-                li
-                  span.col-xs-6.col-sm-4.col-md-4.add-d-title Waterfront Description:
-                  span.col-xs-6.col-sm-8.col-md-8.add-d-entry Intracoastal Front,Ocean Access
             
         .col-md-4.p0
           aside.sidebar.sidebar-property.blog-asside-right
