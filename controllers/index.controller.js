@@ -6,5 +6,8 @@ exports.index = function (req, res, next) {
     const products = productsModel.list();
 
     // render page list
-    res.render('index', { products });
+    res.render('index', { 
+        title: 'Home Page',
+        products 
+    });
 }

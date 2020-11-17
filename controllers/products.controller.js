@@ -6,7 +6,9 @@ exports.list = function (req, res, next) {
     const products = productsModel.list();
 
     // render page list
-    res.render('products/list', { products });
+    res.render('products/list', {
+        title: 'Products Page',
+        products });
 }
 
 exports.detail= function(req, res, next) {
@@ -21,7 +23,10 @@ exports.detail= function(req, res, next) {
 
 
     if (product) {
-    res.render('products/detail', { product });
+    res.render('products/detail', { 
+        title: 'Products Detail',
+        product 
+    });
     }
     else {
         // can them trang 404 de cho nay render 404 page

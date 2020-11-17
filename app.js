@@ -1,9 +1,11 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 
+
 const indexRoute = require('./routes/index.route')
 const productRoute = require('./routes/products.route')
-const userRoute= require('./routes/users.router')
+const userRoute = require('./routes/users.router')
+const db =require('./db')
 
 const app = express();
 const port = 3000;
@@ -22,7 +24,7 @@ app.set('views', './views');
 
 app.use('/', indexRoute);
 app.use('/products', productRoute);
-app.use('/users',userRoute);
+app.use('/users', userRoute);
 
 
 app.listen(port, () => {
