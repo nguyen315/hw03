@@ -8,7 +8,7 @@ const userRoute = require('./routes/users.router')
 const db =require('./db')
 
 const app = express();
-const port = 3000;
+var port = process.env.PORT || 3000;
 
 
 app.use(bodyParser.json()) // for parsing application/json
