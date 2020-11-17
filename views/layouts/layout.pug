@@ -7,7 +7,7 @@ doctype html
 head
   meta(charset='utf-8')
   meta(http-equiv='X-UA-Compatible', content='IE=edge')
-  title #{title}
+  title= title
   meta(name='description', content='GARO is a real-estate template')
   meta(name='author', content='Kimarotec')
   meta(name='keyword', content='html5, css, bootstrap, property, real-estate theme , bootstrap template')
@@ -79,101 +79,17 @@ nav.navbar.navbar-default
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand(href='index.html')
+      a.navbar-brand(href='/')
         img(src='/assets/img/logo.png', alt='')
     // Collect the nav links, forms, and other content for toggling
     #navigation.collapse.navbar-collapse.yamm
       .button.navbar-right
         button.navbar-btn.nav-button.wow.bounceInRight.login(onclick=" window.open('/users')", data-wow-delay='0.4s') Login
-        button.navbar-btn.nav-button.wow.fadeInRight(onclick=" window.open('submit-property.html')", data-wow-delay='0.5s') Submit
       ul.main-nav.nav.navbar-nav.navbar-right
         li.wow.fadeInDown(data-wow-delay='0.1s')
           a(href='/') Home
         li.wow.fadeInDown(data-wow-delay='0.1s')
           a(href='/products') Products
-        li.wow.fadeInDown(data-wow-delay='0.1s')
-          a(href='#') Property
-        li.dropdown.yamm-fw(data-wow-delay='0.1s')
-          a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='200')
-            | Template 
-            b.caret
-          ul.dropdown-menu
-            li
-              .yamm-content
-                .row
-                  .col-sm-3
-                    h5 Home pages
-                    ul
-                      li
-                        a(href='index.html') Home Style 1
-                      li
-                        a(href='index-2.html') Home Style 2
-                      li
-                        a(href='index-3.html') Home Style 3
-                      li
-                        a(href='index-4.html') Home Style 4
-                      li
-                        a(href='index-5.html') Home Style 5
-                  .col-sm-3
-                    h5 Pages and blog
-                    ul
-                      li
-                        a(href='blog.html') Blog listing
-                      li
-                        a(href='single.html') Blog Post (full)
-                      li
-                        a(href='single-right.html') Blog Post (Right)
-                      li
-                        a(href='single-left.html') Blog Post (left)
-                      li
-                        a(href='contact.html') Contact style (1)
-                      li
-                        a(href='contact-3.html') Contact style (2)
-                      li
-                        a(href='contact_3.html') Contact style (3)
-                      li
-                        a(href='faq.html') FAQ page
-                      li
-                        a(href='404.html') 404 page
-                  .col-sm-3
-                    h5 Property
-                    ul
-                      li
-                        a(href='property-1.html') Property pages style (1)
-                      li
-                        a(href='property-2.html') Property pages style (2)
-                      li
-                        a(href='property-3.html') Property pages style (3)
-                    h5 Properties list
-                    ul
-                      li
-                        a(href='properties.html') Properties list style (1)
-                      li
-                        a(href='properties-2.html') Properties list style (2)
-                      li
-                        a(href='properties-3.html') Properties list style (3)
-                  .col-sm-3
-                    h5 Property process
-                    ul
-                      li
-                        a(href='submit-property.html') Submit - step 1
-                      li
-                        a(href='submit-property.html') Submit - step 2
-                      li
-                        a(href='submit-property.html') Submit - step 3
-                    h5 User account
-                    ul
-                      li
-                        a(href='register.html') Register / login
-                      li
-                        a(href='user-properties.html') Your properties
-                      li
-                        a(href='submit-property.html') Submit property
-                      li
-                        a(href='change-password.html') Change password
-                      li
-                        a(href='user-profile.html') Your profile
-              // /.yamm-content
         li.wow.fadeInDown(data-wow-delay='0.4s')
           a(href='contact.html') Contact
     // /.navbar-collapse

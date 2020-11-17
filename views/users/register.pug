@@ -1,7 +1,6 @@
 extends ../layouts/layout.pug
 
 block content
-  
   .page-head
     .container
       .row
@@ -18,13 +17,146 @@ block content
             form(action='', method='post')
               .form-group
                 label(for='userName') UserName
-                input#userName.form-control(type='text')
+                input#userName.form-control(name= 'userName' type='text')
               .form-group
                 label(for='passWord') Password
-                input#passWord.form-control(type='password')
+                input#passWord.form-control(name= 'passWord' type='password')
               .form-group
                 label(for='retypePassword')  Retype Password
                 input#retypePassword.form-control(type='password')
               .text-center
-                a.btn.btn-default(href='/') Register
+                button.btn.btn-default(type='submit')  Register
+
+
+  // Footer area
+  .footer-area
+    .footer
+      .container
+        .row
+          .col-md-3.col-sm-6.wow.fadeInRight.animated
+            .single-footer
+              h4 About us 
+              .footer-title-line
+              img.wow.pulse(src='/assets/img/footer-logo.png', alt='', data-wow-delay='1s')
+              p
+                | Lorem ipsum dolor cum necessitatibus su quisquam molestias. Vel unde, blanditiis.
+              ul.footer-adress
+                li
+                  i.pe-7s-map-marker.strong  
+                  |  9089 your adress her
+                li
+                  i.pe-7s-mail.strong  
+                  |  email@yourcompany.com
+                li
+                  i.pe-7s-call.strong  
+                  |  +1 908 967 5906
+          .col-md-3.col-sm-6.wow.fadeInRight.animated
+            .single-footer
+              h4 Quick links 
+              .footer-title-line
+              ul.footer-menu
+                li
+                  a(href='properties.html') Properties
+                li
+                  a(href='#') Services
+                li
+                  a(href='submit-property.html') Submit property 
+                li
+                  a(href='contact.html') Contact us
+                li
+                  a(href='faq.html') fqa
+                li
+                  a(href='faq.html') Terms 
+          .col-md-3.col-sm-6.wow.fadeInRight.animated
+            .single-footer
+              h4 Last News
+              .footer-title-line
+              ul.footer-blog
+                li
+                  .col-md-3.col-sm-4.col-xs-4.blg-thumb.p0
+                    a(href='single.html')
+                      img(src='/assets/img/demo/small-proerty-2.jpg')
+                    span.blg-date 12-12-2016
+                  .col-md-8.col-sm-8.col-xs-8.blg-entry
+                    h6
+                      a(href='single.html') Add news functions 
+                    p(style='line-height: 17px; padding: 8px 2px;') Lorem ipsum dolor sit amet, nulla ...
+                li
+                  .col-md-3.col-sm-4.col-xs-4.blg-thumb.p0
+                    a(href='single.html')
+                      img(src='/assets/img/demo/small-proerty-2.jpg')
+                    span.blg-date 12-12-2016
+                  .col-md-8.col-sm-8.col-xs-8.blg-entry
+                    h6
+                      a(href='single.html') Add news functions 
+                    p(style='line-height: 17px; padding: 8px 2px;') Lorem ipsum dolor sit amet, nulla ...
+                li
+                  .col-md-3.col-sm-4.col-xs-4.blg-thumb.p0
+                    a(href='single.html')
+                      img(src='/assets/img/demo/small-proerty-2.jpg')
+                    span.blg-date 12-12-2016
+                  .col-md-8.col-sm-8.col-xs-8.blg-entry
+                    h6
+                      a(href='single.html') Add news functions 
+                    p(style='line-height: 17px; padding: 8px 2px;') Lorem ipsum dolor sit amet, nulla ...
+          .col-md-3.col-sm-6.wow.fadeInRight.animated
+            .single-footer.news-letter
+              h4 Stay in touch
+              .footer-title-line
+              p
+                | Lorem ipsum dolor sit amet, nulla  suscipit similique quisquam molestias. Vel unde, blanditiis.
+              form
+                .input-group
+                  input.form-control(type='text', placeholder='E-mail ... ')
+                  span.input-group-btn
+                    button.btn.btn-primary.subscribe(type='button')
+                      i.pe-7s-paper-plane.pe-2x
+                // /input-group
+              .social.pull-right
+                ul
+                  li
+                    a.wow.fadeInUp.animated(href='https://twitter.com/kimarotec')
+                      i.fa.fa-twitter
+                  li
+                    a.wow.fadeInUp.animated(href='https://www.facebook.com/kimarotec', data-wow-delay='0.2s')
+                      i.fa.fa-facebook
+                  li
+                    a.wow.fadeInUp.animated(href='https://plus.google.com/kimarotec', data-wow-delay='0.3s')
+                      i.fa.fa-google-plus
+                  li
+                    a.wow.fadeInUp.animated(href='https://instagram.com/kimarotec', data-wow-delay='0.4s')
+                      i.fa.fa-instagram
+                  li
+                    a.wow.fadeInUp.animated(href='https://instagram.com/kimarotec', data-wow-delay='0.6s')
+                      i.fa.fa-dribbble
+    .footer-copy.text-center
+      .container
+        .row
+          .pull-left
+            span
+              | (C) 
+              a(href='http://www.KimaroTec.com') KimaroTheme
+              |  , All rights reserved 2016
+          .bottom-menu.pull-right
+            ul
+              li
+                a.wow.fadeInUp.animated(href='#', data-wow-delay='0.2s') Home
+              li
+                a.wow.fadeInUp.animated(href='#', data-wow-delay='0.3s') Property
+              li
+                a.wow.fadeInUp.animated(href='#', data-wow-delay='0.4s') Faq
+              li
+                a.wow.fadeInUp.animated(href='#', data-wow-delay='0.6s') Contact
+  script(src='/assets/js/modernizr-2.6.2.min.js')
+  script(src='/assets/js/jquery-1.10.2.min.js')
+  script(src='/bootstrap/js/bootstrap.min.js')
+  script(src='/assets/js/bootstrap-select.min.js')
+  script(src='/assets/js/bootstrap-hover-dropdown.js')
+  script(src='/assets/js/easypiechart.min.js')
+  script(src='/assets/js/jquery.easypiechart.min.js')
+  script(src='/assets/js/owl.carousel.min.js')
+  script(src='/assets/js/wow.js')
+  script(src='/assets/js/icheck.min.js')
+  script(src='/assets/js/price-range.js')
+  script(src='/assets/js/main.js')
 

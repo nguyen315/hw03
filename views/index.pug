@@ -1,5 +1,4 @@
 extends ./layouts/layout.pug
-
 block content
   .slider-area
     .slider
@@ -14,9 +13,7 @@ block content
       .row
         .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1.col-sm-12
           h2 property Searching Just Got So Easy
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deserunt deleniti, ullam
-            | commodi sit ipsam laboriosam velit adipisci quibusdam aliquam teneturo!
+         
           .search-form.wow.pulse(data-wow-delay='0.8s')
             form.form-inline(action='')
               button.btn.toggle-btn(type='button')
@@ -138,10 +135,7 @@ block content
       .row
         .col-md-10.col-md-offset-1.col-sm-12.text-center.page-title
           // /.feature title
-          h2 Top submitted property
-          p
-            | Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium. Nullam sed arcu
-            | ultricies .
+          h2 Best seller 
       .row
         .proerty-th
           each product in products
@@ -157,16 +151,6 @@ block content
                   span.pull-left
                     b Price :
                     |  #{ product.basePrice } VND
-          
-          //- .col-sm-6.col-md-3.p0
-          //-   .box-tree.more-proerty.text-center
-          //-     .item-tree-icon
-          //-       i.fa.fa-th
-          //-     .more-entry.overflow
-          //-       h5
-          //-         a(href='/products/detail') CAN&apos;T DECIDE ? 
-          //-       h5.tree-sub-ttl Show all properties
-          //-       button.btn.border-btn.more-black(value='All properties') All properties
   // Welcome area
   .Welcome-area
     .container
@@ -288,28 +272,6 @@ block content
   .boy-sale-area
     .container
       .row
-        .col-md-6.col-sm-10.col-sm-offset-1.col-md-offset-0.col-xs-12
-          .asks-first
-            .asks-first-circle
-              span.fa.fa-search
-            .asks-first-info
-              h2 ARE YOU LOOKING FOR A Property?
-              p
-                | varius od lio eget conseq uat blandit, lorem auglue comm lodo nisl no us nibh mas lsa
-            .asks-first-arrow
-              a(href='properties.html')
-                span.fa.fa-angle-right
-        .col-md-6.col-sm-10.col-sm-offset-1.col-xs-12.col-md-offset-0
-          .asks-first
-            .asks-first-circle
-              span.fa.fa-usd
-            .asks-first-info
-              h2 DO YOU WANT TO SELL A Property?
-              p
-                | varius od lio eget conseq uat blandit, lorem auglue comm lodo nisl no us nibh mas lsa
-            .asks-first-arrow
-              a(href='properties.html')
-                span.fa.fa-angle-right
         .col-xs-12
           p.asks-call
             | QUESTIONS? CALL US : 

@@ -25,7 +25,43 @@ const products = [
     },
     {
         id: 5,
-        title: "Clean Code",
+        title: "Doraemon",
+        cover: "https://picsum.photos/200/300",
+        basePrice: 500000
+    },
+    {
+        id: 6,
+        title: "Up",
+        cover: "https://picsum.photos/200/300",
+        basePrice: 500000
+    },
+    {
+        id: 7,
+        title: "GDucky",
+        cover: "https://picsum.photos/200/300",
+        basePrice: 500000
+    },
+    {
+        id: 8,
+        title: "Good Boy",
+        cover: "https://picsum.photos/200/300",
+        basePrice: 500000
+    },
+    {
+        id: 9,
+        title: "Bad Boy",
+        cover: "https://picsum.photos/200/300",
+        basePrice: 500000
+    },
+    {
+        id: 10,
+        title: "Binz",
+        cover: "https://picsum.photos/200/300",
+        basePrice: 500000
+    },
+    {
+        id: 11,
+        title: "Unicorn",
         cover: "https://picsum.photos/200/300",
         basePrice: 500000
     }
